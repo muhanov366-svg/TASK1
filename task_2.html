@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_task_2.css">
+</head>
+<body>
+    <header class="menu-block">
+            <div class="logo">
+                <img src="c2f5f3f5c20811f086322abb7232ea76_1.jpg" alt="Логотип сайта">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#gallery">галерея</a></li>
+                    <li><a href="#planing">запланировать путешествие</a></li>
+                    <li><a href="#contacts">контакты</a></li>
+                </ul>
+            </nav>            
+    </header>
+    <main>
+        <article>
+            <section>
+                <h2>о проекте</h2>
+                <p>добро пожаловать на сайт "Путешествия по России"! Здесь вы найдете информацию о саамых интересных местах нашей страны.<br>Россия - самая большая страна в мире и на ее территории расположено множество уникальных природных и культурных достопримечательностей</p>
+            </section>
+                <section id="popularity">
+                    <h2>ПОПУЛЯРНЫЕ НАПРАВЛЕНИЯ</h2>
+                    <h3>Топ 5 направлений для путешествий</h3>
+                    <ol>
+                        <li>озеро Байкал</li>
+                        <li>Алтай</li>
+                        <li>Краснодарский край</li>
+                        <li>Урал</li>
+                        <li>Камчатка</li>
+                    </ol>
+                    <table>
+                        <caption>сравнение направлений</caption>
+                        <thead>
+                            <tr>
+                                <th>направление</th>
+                                <th>сезон для посещения</th>
+                                <th>стоиомсть по ключ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>озеро Байкал/td>
+                                <td id="text">лето/осень</td>
+                                <td id="text">120 000</td>
+                            </tr>
+                            <tr>
+                                <td>Алтай</td>
+                                <td id="text">лето/зима</td>
+                                <td id="text">200 000</td>
+                            </tr>
+                            <tr>
+                                <td>Краснодарский край</td>
+                                <td id="text">весна/лето</td>
+                                <td id="text">150 000</td>
+                            </tr>
+                            <tr>
+                                <td>Урал</td>
+                                <td id="text">круглогодично</td>
+                                <td id="text">120 000</td>
+                            </tr>
+                            <tr>
+                                <td>Камчатка</td>
+                                <td id="text">лето</td>
+                                <td id="text">250 000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            
+            <section class="grid-container" id="gallery">
+                    <section class="menu-item">
+                        <img src="baikal.jpg" alt="озеро Байкал">
+                        <h2>озеро Байкал</h2>
+                        <p> Байкал привлекает туристов своими живописными берегами, горами и богатой флорой и фауной</p>
+                        <button>Забронировать</button>
+                    </section>
+                    <section class="menu-item">
+                        <img src="altai.jpg" alt="">
+                        <h2>Алтай</h2>
+                        <p>Алтай — удивительное место, которое называют «сибирскими Альпами» или «Тибетом в России».</p>
+                        <button>Забронировать</button>
+                    </section>
+                    <section class="menu-item">
+                        <img src="krasnodar.jpg" alt="озеро Байкал">
+                        <h2>Краснодарский край</h2>
+                        <p>Краснодарский край — край яркого солнца и гор, бескрайних степей и средиземноморских густых лесов, скалистых берегов Азовского и Чёрного морей. </p>
+                        <button>Забронировать</button>
+                    </section>
+            </section>
+
+            <section class="grid-container">
+                <section class="menu-item">
+                    <img src="ural.jpg" alt="">
+                    <h2>Урал</h2>
+                    <p>Урал — это величественная горная система. Словно древний страж, он разделяет Европу и Азию, храня в своих недрах тайны тысячелетий.</p>
+                    <button>Забронировать</button>
+                </section>
+                <section class="menu-item">
+                    <img src="kamachatka.jpg" alt="">
+                    <h2>Камчатка</h2>
+                    <p>Камчатка — это край суровой красоты, где величественные вулканы пронзают небо, а горячие источники дарят тепло среди холодных просторов</p>
+                    <button>Забронировать</button>
+                </section>
+            </section>
+        </article>
+
+        <section id="planing">
+            <h2>запланировать путешествие</h2>
+            <label for username><strong>Ваше имя</strong></label>
+            <input type="text" name="username" id="username" placeholder="Введите Ваше имя"><br>
+    
+            <label for user_email><strong>Ваша почта</strong></label>
+            <input type="email" name="email" id="user_email" placeholder="example@domain.com"><br>
+    
+            <label for="направление"><strong>направление:</strong></label>
+            <select id="direction" name="direction">
+                <option value="">Выберите направление</option>
+                <option value="ru">озеро Байкал</option>
+                <option value="us">Алтай</option>
+                <option value="gb">Краснодарский край</option>
+                <option value="ru">Урал</option>
+                <option value="ru">Камчатка</option>
+            </select><br>
+
+            <!-- Переключатель (радиокнопка) -->
+            <input type="radio" id="individual" name="sposob" value="individual">
+            <label for="individual">индивидальное</label>
+            <input type="radio" id="group" name="sposob" value="group">
+            <label for="group">групповое</label><br>
+
+            <!-- Дата -->
+            <label for="date"><strong>выбрать дату</strong></label>
+            <input type="date" name="birthdate"><br>
+
+            <!-- Флажок (чекбокс) -->
+            <label><strong>дополнительные услуги:</strong></label><br>
+            <input type="checkbox" id="services" name="services" checked>
+            <label for="services">гид</label><br>
+            <input type="checkbox" id="services" name="services" checked>
+            <label for="services">трансфеер</label><br>
+            <input type="checkbox" id="services" name="services" checked>
+            <label for="services">страховка</label><br>
+
+            <!-- Многострочное текстовое поле -->
+            <label for="message">коментарии и пожелания:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+            <!-- Обычная кнопка -->
+            <button type="button">запланировать</button>
+            
+            <!-- Кнопка сброса формы -->
+            <input type="reset" value="Сбросить">
+        </section>
+        
+        <!-- Информация о контактах -->
+        <section id="contact-info">
+            <h2 id="contacts">Наши контакты:</h2>
+            <address><ol>
+                <li>Адрес: ул. Большая Дмитровка, д. 15</li>
+                <li>Телефон: +7 (495) 123-45-67</li>
+                <li>Электронная почта: info@pizzahouse.ru</li>
+            </ol></address>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.566358560563!2d37.61841841583365!3d55.75398668055734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc56f1b8ab%3A0x6c02a8a8e1a19003!2z0JHQvtGB0LrQstCwLCDQntC-0LvQsCDQuNGPINC_0YDQvdGD0YjQtdGC0LjRjw!5e0!3m2!1sru!2sru!4v1675643882502!5m2!1sru!2sru" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+    <footer>
+        <span>
+            © 2006-2025 Туроператор "Путешествия по России" - официальный сайт<br>
+            Вся информация на сайте не является публичной офертой.
+        </span>
+    </footer>
+</body>
+</html>
