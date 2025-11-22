@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #034586;
+    padding-bottom: 60px; /* место для кнопки "наверх" */
+  }
+
+  /* === Хедер === */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #032547;
+    color: white;
+    padding: 5px 3px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .logo img {
+    height: 60px;
+    border-radius: 25px;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+
+  nav a {
+    color: rgb(255, 0, 221);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* === Основной контент === */
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+
+  .section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+
+  /* === Блоки 1 и 2: карточки === */
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .card {
+    text-align: center;
+    max-width: 250px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  /* === Блок 3: список === */
+  ol {
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  /* === Кнопка "наверх" === */
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2c3e50;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 99;
+  }
+
+  .scroll-to-top:hover {
+    background-color: #1a252f;
+  }
+ 
+  .footer {
+  display: flex;
+  flex-wrap: nowrap;       
+  align-items: flex-start; 
+  gap: 10px;
+}
+  a{
+    color: rgb(8, 236, 27);  
+  }
